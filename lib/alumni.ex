@@ -10,7 +10,14 @@ defmodule School.Alumni do
     IO.inspect(id)
   end
 
-  def list_alumni, do: IO.inspect(%{})
+  def list_alumni do
+    Task.async(fn ->
+      :timer.sleep(1000)
+      IO.inspect(%{})
+
+      :ok
+    end)
+  end
 
   def update_alumni(id, attrs \\ %{}) do
     id

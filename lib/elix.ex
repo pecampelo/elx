@@ -1,7 +1,9 @@
-defmodule Elix do
+defmodule School do
   @moduledoc """
   Documentation for `Elix`.
   """
+
+  use Application
 
   @doc """
   Hello world.
@@ -12,7 +14,11 @@ defmodule Elix do
       :world
 
   """
-  def hello do
-    :world
+  def start(_type, args) do
+    :world |> IO.inspect
+
+    School.Supervisor.start_link(name: School.Supervisor)
+
+
   end
 end
