@@ -20,10 +20,9 @@ services:
           - application
     depends_on:
       - db
-      - redis
 
   db:
-    image: postgres:14.1-alpine
+    image: postgres:15.2-alpine
     environment:
       - POSTGRES_PASSWORD=postgres
     volumes:
@@ -36,17 +35,6 @@ services:
       default:
         aliases:
           - postgres
-
-  redis:
-    image: redis:6.2.5
-    ports:
-      - 6379:6379
-    expose:
-      - 6379
-    networks:
-      default:
-        aliases:
-          - redis
 
 volumes:
   pgdata:

@@ -1,5 +1,5 @@
 defmodule School.Alumni do
-
+  
   def greet_alumni(), do: :hello
 
   def create_alumni(attrs \\ %{}) do

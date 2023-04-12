@@ -8,8 +8,8 @@ defmodule Elix do
 
   ## Examples
 
-      iex> Elix.hello()
-      :world
+    iex> Elix.hello()
+    :world
 
   """
   def hello do
