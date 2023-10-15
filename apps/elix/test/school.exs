@@ -1,4 +1,4 @@
-defmodule SchoolTest do
+defmodule ElixTest do
   use ExUnit.Case, async: true
 
   alias School.Alumni

@@ -1,4 +1,4 @@
-defmodule School.Course do
+defmodule Elix.Course do
   use Agent
 
   @doc """
